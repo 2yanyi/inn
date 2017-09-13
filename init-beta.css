@@ -1,0 +1,59 @@
+html {
+    background-color: #F4F5F5; color: #24292E; font-size: 62.5%;
+}
+body {
+    padding: 0; font-size: 1.4rem; line-height: 1.5rem; letter-spacing: 1px;
+}
+h1, h2, h3 {
+    margin-top: 10px; letter-spacing: 2px; font-weight: 400;
+}
+hr {
+    margin: 10px 0; border: none;border-top: 1px solid #dde;
+}
+a {
+    color: #06f; text-decoration: none; cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+ol, ul {
+    padding: 0 20px; font-family: 微软雅黑;
+}
+li {
+    padding: 2px 0;
+}
+p {
+    line-height: 20px;
+}
+table {
+    width: 100%; border-collapse: collapse; font-size: 13px; font-family: 微软雅黑;
+}
+table th, table td {
+    padding: 6px 2%; border: 1px solid #dde; color: #58595E;
+}
+blockquote {
+    margin: 0; padding: 1px 30px; border-left: 3px solid #DFE2E5; color: #55595E;
+}
+pre {
+    padding: 15px; border-radius: 3px; background-color: #F6F8FA; color: #333; font-size: 12px;
+}
+blockquote, pre, table {
+    margin-bottom: 30px;
+}
+.view {
+    width: 1200px; position: relative; margin: 0 auto;
+}
+.content img {
+    width: 100%;
+}
+.content {
+    width: 800px; position: relative; padding: 50px 40px; overflow: hidden;
+    border-right: 1px solid #EEE; border-left: 1px solid #EEE;
+    background-color: #FFF; text-overflow: ellipsis;
+}
+@media only screen and (max-width: 700px) {
+    .content {
+        padding: 50px 0; width: 100%; border: none;
+    }
+    .view { width: 100%;}
+}
