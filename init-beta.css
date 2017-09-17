@@ -1,29 +1,28 @@
+/* default */
 html {
-    background-color: #F4F5F5; color: #24292E; font-size: 62.5%;
+    font-size: 62.5%; color: #24292E;
 }
 body {
+    background-color: #F4F5F5;
     padding: 0; font-size: 1.4rem; line-height: 1.5rem; letter-spacing: 1px;
 }
 h1, h2, h3 {
-    margin-top: 10px; letter-spacing: 2px; font-weight: 400;
+    margin-top: 10px; margin-bottom: 10px; letter-spacing: 2px; font-weight: 500;
 }
 hr {
-    margin: 10px 0; border: none;border-top: 1px solid #dde;
+    margin: 20px 0; border: none;border-top: 1px solid #dde;
 }
 a {
-    color: #06f; text-decoration: none; cursor: pointer;
+    cursor: pointer; color: #333
 }
 a:hover {
-    text-decoration: underline;
+    color: #333; text-decoration: underline
 }
-ol, ul {
-    padding: 0 20px; font-family: 微软雅黑;
-}
-li {
-    padding: 2px 0;
+.a:hover {
+    text-decoration: none
 }
 p {
-    line-height: 20px;
+    margin: 0; padding: 10px 0;
 }
 table {
     width: 100%; border-collapse: collapse; font-size: 13px; font-family: 微软雅黑;
@@ -40,20 +39,60 @@ pre {
 blockquote, pre, table {
     margin-bottom: 30px;
 }
-.view {
-    width: 1200px; position: relative; margin: 0 auto;
+
+/* form */
+button {
+    cursor: pointer;
 }
-.content img {
-    width: 100%;
+button, input, textarea{
+    padding: 4px 10px;outline:0;border:1px solid #ddd;font-size: 13px;
+}
+button:hover, input:focus, textarea:focus{
+    border:1px solid #888;
+}
+
+/* view */
+.view {
+    width: 1200px; padding: 0 10px; margin: 0; position: relative; margin: 0 auto;
 }
 .content {
-    width: 800px; position: relative; padding: 50px 40px; overflow: hidden;
-    border-right: 1px solid #EEE; border-left: 1px solid #EEE;
-    background-color: #FFF; text-overflow: ellipsis;
+    width: 75%; position: relative;
 }
-@media only screen and (max-width: 700px) {
-    .content {
+.sidebar {
+    width: 22%; position: relative;
+    /* position: absolute; top: 0; right: 10px */
+}
+
+/* markdown */
+.markdown img {
+    width: 100%;
+}
+.markdown {
+    position: relative; padding: 50px 80px; overflow: hidden;
+    border: 1px solid #EEE; background-color: #FFF; text-overflow: ellipsis;
+    font-size: 16px; line-height: 30px; font-weight: 400; color: #333;
+}
+
+/* media */
+@media only screen and (max-width: 800px) {
+    .view, .content { width: 100%;}
+    .sidebar { display: none;}
+    .markdown {
         padding: 50px 0; width: 100%; border: none;
     }
-    .view { width: 100%;}
+    body { background-color: #fff;}
+}
+
+/* 自定义内容卡片 */
+.card-box {
+    background-color: #fff;
+    border: 1px solid #eee;    
+    width: 660px;
+    margin-top: 30px;
+    padding: 50px 35px;
+    border-radius: 4px;
+}
+
+.card-box>b {
+    font-size: 23px;
 }
