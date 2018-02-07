@@ -136,12 +136,10 @@ blockquote {
 }
 
 /**
- * 给按钮添加鼠标小手
+ * 文本框 placeholder 颜色
  */
 
-button {
-    cursor: pointer;
-}
+::-webkit-input-placeholder{color: #dde;}
 
 /**
  * 按钮，文本框，文本域，统一样式重置，宽度默认100%
@@ -155,6 +153,7 @@ textarea {
     border: 1px solid #dde;
     font-size: 13px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /**
@@ -165,6 +164,15 @@ button:hover,
 input:focus,
 textarea:focus {
     border: 1px solid #888;
+}
+
+/**
+ * 给按钮添加鼠标小手，和背景
+ */
+
+ button {
+    cursor: pointer;
+    background-color: #eee;
 }
 
 /**
