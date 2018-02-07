@@ -139,7 +139,7 @@ blockquote {
  * 文本框 placeholder 颜色
  */
 
-::-webkit-input-placeholder{color: #dde;}
+::-webkit-input-placeholder{color: #ccc;}
 
 /**
  * 按钮，文本框，文本域，统一样式重置，宽度默认100%
